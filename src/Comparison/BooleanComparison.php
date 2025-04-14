@@ -23,4 +23,9 @@ class BooleanComparison extends AbstractComparison
     {
         return $value !== null;
     }
+
+    public function isEqual($expected, $value): bool
+    {
+        return $expected == $value;
+    }
 }

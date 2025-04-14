@@ -45,6 +45,7 @@ Boolean
 * ### boolOr
 * ### isNull
 * ### isNotNull
+* ### isEqual
 
 Object
 -------

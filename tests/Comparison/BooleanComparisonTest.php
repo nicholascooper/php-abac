@@ -41,6 +41,14 @@ class BooleanComparisonTest extends \PHPUnit\Framework\TestCase
         $this->assertTrue($this->comparison->isNotNull(true, true));
         $this->assertFalse($this->comparison->isNotNull(true, null));
     }
+
+    public function testEquals()
+    {
+        $this->assertTrue($this->comparison->isEqual(true, true));
+        $this->assertTrue($this->comparison->isEqual(false, false));
+        $this->assertFalse($this->comparison->isEqual(false, true));
+        $this->assertFalse($this->comparison->isEqual(true, false));
+    }
     
     public function getComparisonManagerMock()
     {
